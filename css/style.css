@@ -1,10 +1,10 @@
-body {
+/*body {
 	background: #2c373b;
 	color: #b2b9bC;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	line-height: 2em;
-}
+}   */
 
 h1, h2, h3, h4, h5, h6 {
 	color: #fff;
@@ -27,12 +27,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero {
-	background: #369ab8;
+	background: #a4f147;
 	color: #fff;
 	text-align: center;
 }
 
 #footer {
-	color: #62696c;
+	color: #ffffff;
 	text-align: center;
+}
+
+.transbox
+{
+
+    margin:30px 50px;
+    background-color: #3e20ff;
+    border:1px solid black;
+    opacity:0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
 }
