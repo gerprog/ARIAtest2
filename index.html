@@ -22,47 +22,31 @@
 			<!-- Header -->
 				<div id="header" class="row">
 					<div class="4u">
-						<h1>Example</h1>
+                        <h1>Gerard Daly. ARIA exam 26 March 2014</h1>
 					</div>
-					<nav id="nav" class="8u">
-						<a href="#">Home</a>
-						<a href="#">About Me</a>
-						<a href="#">Blog</a>
-						<a href="#">Contact</a>
-					</nav>
+
 				</div>
 			<!-- Hero -->
 				<section id="hero">
-					<h2>Hello world.</h2>
-					<p>Lorem ipsum dolor sit amet sed magna etiam adipiscing.</p>
-					<a href="#" class="button">Get Started</a>
+                    <h1>The Converter</h1>
 				</section>
 			<!-- Features -->
 				<div class="row">
-					<section class="-4u">
+					<div class="4u">
+                        <p>Enter metric to convert here</p>
+                        <input type="text" id="imperial">
+					</div>
 
-					</section>
-					<section class="4u">
-                        <h2>The Imperial to Metric Converter</h2>
-                        <p>Enter a number and it will be converted when you press the button</p>
-					</section>
-					<section class="4u">
+                    <div class="4u">
+                    <button class="button" id="convert_button" onclick="convert()">Do the Convert!!</button>
+                    </div>
 
-					</section>
+					<div class="4u">
+                        <h2 id="metric">The result!</h2>
+					</div>
 				</div>
 
 
-            <div class="row">
-                <section class="4u">
-                    <input type="text" id="imperial">
-                </section>
-                <section class="4u">
-                    <p id="metric">The result will display here</p>
-                </section>
-                <section class="4u">
-                    <button id="convert_button" type="button" onclick="convert()">convert</button>
-                </section>
-            </div>
 			<!-- Footer -->
 				<div id="footer">
 					&copy; Example. All rights reserved.
