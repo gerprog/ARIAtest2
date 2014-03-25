@@ -20,8 +20,3 @@ var Converter = (function () {
     }
 })();
 
-var convert = function () {
-    var weight = document.getElementById("imperial").value;
-    var result = Converter.convertFromImperialToMetric(weight);
-    document.getElementById("metric").innerHTML = result;
-}
