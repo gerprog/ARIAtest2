@@ -1,8 +1,11 @@
-describe ("My Converter", function() {
+describe("My Converter", function() {
     it("should convert imperial weight to metric", function() {
-        expect (Converter.convertFromImperialToMetric(2.2)).toBe(1);
+        expect(Converter.convertFromPoundsToKIlo(2.2)).toBe(1);
+    });
+    it("should convert celsius temperature to fahrenheit", function() {
+        expect (tempConverter.convertFromCelsiusToFahrenheit(-17.2222)).toBe(1);
+    });
+    it("should be able to deal with strings", function(){
+        expect(function() {Converter.convertFromPoundsToKIlo("hello")}).toThrow(new Error("Not a number"))
     })
-    it("should be able to deal with strings", function() {
-        expect (function() {Converter.convertFromImperialToMetric("hello")}).toThrow(new Error("Not a number"));
-    })
-})
+});
